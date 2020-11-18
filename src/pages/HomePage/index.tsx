@@ -3,7 +3,7 @@ import React from 'react';
 import Shape from '../../components/Shape';
 import SkillCarousel from '../../components/SkillCarousel';
 
-import { Container, SectionFirst, SectionSecond } from './styles';
+import { Container, SectionFirst, SectionSecond, SectionThird } from './styles';
 
 const HomePage: React.FC = () => {
   return (
@@ -26,11 +26,15 @@ const HomePage: React.FC = () => {
 
       <SectionSecond>
         <h2>
-          GHC<strong>Gerenciador de Habilidades de Comunicação</strong>
+          Talk UP<strong>Gerenciador de Habilidades de Comunicação</strong>
         </h2>
+      </SectionSecond>
+
+      <SectionThird className="no-padding">
+        <h2>Métricas e Habilidades</h2>
 
         <SkillCarousel />
-      </SectionSecond>
+      </SectionThird>
     </Container>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from 'react-slick';
+import Slider, { Settings } from 'react-slick';
 
 import ImgBomOuvinte from '../../assets/images/bom-ouvinte.svg';
 import ImgComNaoVerbal from '../../assets/images/comunicacao-nao-verbal.svg';
@@ -21,7 +21,8 @@ const SkillCarousel: React.FC = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-  };
+    arrows: false,
+  } as Settings;
 
   return (
     <Container>

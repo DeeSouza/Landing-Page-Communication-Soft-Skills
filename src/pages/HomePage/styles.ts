@@ -2,12 +2,32 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 100%;
+
+  section {
+    width: 100%;
+    padding: 0 25px;
+
+    & + section {
+      margin-top: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 26px;
+
+      strong {
+        display: block;
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 5px;
+        padding: 0px 10px;
+      }
+    }
+  }
 `;
 
 export const SectionFirst = styled.section`
-  width: 100%;
   background: #6555df;
-  padding: 0 25px;
   height: calc(100% - 230px);
   position: relative;
 
@@ -38,19 +58,10 @@ export const SectionFirst = styled.section`
   }
 `;
 
-export const SectionSecond = styled.section`
-  margin-top: 30px;
+export const SectionSecond = styled.section``;
 
-  h2 {
-    text-align: center;
-    font-size: 30px;
-
-    strong {
-      display: block;
-      font-size: 20px;
-      font-weight: 300;
-      margin-top: 5px;
-      padding: 0px 40px;
-    }
+export const SectionThird = styled.section`
+  &.no-padding {
+    padding: 0;
   }
 `;

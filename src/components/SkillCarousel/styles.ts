@@ -10,7 +10,7 @@ export const ItemSlider = styled.div`
 
   .wrapper-item {
     max-width: 320px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0px 25px;
 
     p {
