@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
   * {
     margin: 0;
     padding: 0;
@@ -12,12 +10,16 @@ export default createGlobalStyle`
 
   body {
     background: ${({ theme }) => theme.colors.background};
-    color: #FFF;
+    color: ${({ theme }) => theme.colors.text};
     -webkit-font-smoothing: antialiased;
   }
 
+  html, body, #root {
+    height: 100%;
+  }
+
   body, input, button {
-    font-family: 'Ubuntu', serif;
+    font-family: 'Lato', serif;
     font-size: 16px;
   }
 
@@ -27,10 +29,14 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
   }
 
   a {
     text-decoration: none;
+    outline: none;
   }
 
   ul {
