@@ -1,11 +1,7 @@
 import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      Oi
-    </div>
-  );
-}
+const App: React.FC = () => {
+  return <div className="App">Oi</div>;
+};
 
 export default App;
