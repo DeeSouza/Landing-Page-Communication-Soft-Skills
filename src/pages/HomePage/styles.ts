@@ -1,41 +1,15 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  height: 100%;
+`;
 
 export const SectionFirst = styled.section`
   width: 100%;
   background: #6555df;
   padding: 0 25px;
-  height: 65vh;
+  height: calc(100% - 230px);
   position: relative;
-
-  .background {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-
-    svg {
-      position: relative;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 24px;
-
-      path {
-        fill: #ffffff;
-      }
-    }
-
-    @media (max-width: 767px) {
-      svg {
-        width: calc(100% + 1.3px);
-        height: 12px;
-      }
-    }
-  }
 
   h1 {
     color: #fff;
@@ -49,13 +23,18 @@ export const SectionFirst = styled.section`
     }
   }
 
-  strong {
+  p {
     color: #fff;
     font-family: 'Lato';
     font-weight: 300;
     font-size: 20px;
     margin-top: 30px;
     display: block;
+    max-width: 280px;
+
+    strong {
+      color: #ffb4e0;
+    }
   }
 `;
 
