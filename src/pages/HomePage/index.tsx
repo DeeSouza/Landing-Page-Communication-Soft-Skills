@@ -1,10 +1,14 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 
 import Shape from '../../components/Shape';
 import SkillCarousel from '../../components/SkillCarousel';
 import Flow from '../../components/Flow';
+import TitleSection from '../../components/TitleSection';
 
 import ImageIntro from '../../assets/images/intro.svg';
+import ImageCarrer from '../../assets/images/carreira.svg';
 
 import {
   Container,
@@ -40,16 +44,20 @@ const HomePage: React.FC = () => {
               <strong> Talk Up</strong>.
             </p>
           </div>
-          <div className="image">
-            <img src={ImageIntro} alt="Comunicação" />
-          </div>
+
+          <Fade right>
+            <div className="image">
+              <img src={ImageIntro} alt="Comunicação" />
+            </div>
+          </Fade>
         </div>
       </SectionInitial>
 
       <SectionAbout>
-        <h2>
+        <TitleSection>
           Talk UP<strong>Gerenciador de Habilidades de Comunicação</strong>
-        </h2>
+        </TitleSection>
+
         <p className="description">
           Cada vez mais as <strong>Soft Skills</strong> estão fazendo parte do
           nosso dia-a-dia. Existem muitas <strong>Soft Skills</strong>, porquê
@@ -65,13 +73,14 @@ const HomePage: React.FC = () => {
       </SectionAbout>
 
       <SectionSkills>
-        <h2>Habilidades</h2>
+        <TitleSection>Habilidades</TitleSection>
 
         <SkillCarousel />
       </SectionSkills>
 
       <SectionCommunication>
-        <h2>Comunicação Avançada</h2>
+        <TitleSection>Comunicação Avançada</TitleSection>
+
         <p className="description">
           Através do <strong>Talk UP</strong> você poderá melhorar suas
           habilidades de comunicação por gerenciar os traços de personalidade e
@@ -84,30 +93,41 @@ const HomePage: React.FC = () => {
       </SectionCommunication>
 
       <SectionHowWork>
-        <h2>Como Funciona</h2>
+        <TitleSection>Como Funciona</TitleSection>
 
         <Flow />
       </SectionHowWork>
 
       <SectionCarrer>
-        <h2>Carreira e Relacionamento</h2>
+        <TitleSection>Carreira e Relacionamento</TitleSection>
 
-        <p className="description">
-          Não importa a sua idade, onde você nasceu, raça, etnia, grau de
-          escolaridade ou profissão, todos nós precisamos nos comunicar. Para
-          alguns pode ser um desafio desenvolver essa
-          <strong> Soft Skill</strong> tão importante para a vida.
-          <br /> <br />
-          Se você é um desenvolvedor, talvez ache que a comunicação não é tão
-          essencial assim. <strong>Mas tenho uma notícia para te dar: </strong>
-          as coisas mudaram e continuam mudando no mercado de trabalho, e se
-          comunicar bem, trabalhar em equipe, participar em reuniões e processos
-          fazem parte do trabalho e são exigidos pelas empresas.
-        </p>
+        <div className="wrapper">
+          <Slide left>
+            <div className="image">
+              <img src={ImageCarrer} alt="Carreira e Relacionamento" />
+            </div>
+          </Slide>
+
+          <Slide right>
+            <p className="description">
+              Não importa a sua idade, onde você nasceu, raça, etnia, grau de
+              escolaridade ou profissão, todos nós precisamos nos comunicar.
+              Para alguns pode ser um desafio desenvolver essa
+              <strong> Soft Skill</strong> tão importante para a vida.
+              <br /> <br />
+              Se você é um desenvolvedor, talvez ache que a comunicação não é
+              tão essencial assim.
+              <strong> Mas tenho uma notícia para te dar: </strong>
+              as coisas mudaram e continuam mudando no mercado de trabalho, e se
+              comunicar bem, trabalhar em equipe, participar em reuniões e
+              processos fazem parte do trabalho e são exigidos pelas empresas.
+            </p>
+          </Slide>
+        </div>
       </SectionCarrer>
 
       <SectionMedia>
-        <h2>Artigos e Vídeos</h2>
+        <TitleSection>Artigos e Vídeos</TitleSection>
 
         <MediaCarousel />
       </SectionMedia>

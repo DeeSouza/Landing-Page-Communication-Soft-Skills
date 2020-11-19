@@ -277,13 +277,38 @@ export const SectionHowWork = styled.section`
 export const SectionCarrer = styled.section`
   padding: 0 25px;
 
-  p {
-    font-size: 16px;
-    font-weight: 300;
-    margin: 10px auto;
-    text-align: center;
-    line-height: 1.3;
-    max-width: 500px;
+  .wrapper {
+    margin: auto;
+    max-width: 1280px;
+
+    .image {
+      margin: 50px 0px;
+
+      img {
+        width: 80%;
+        max-width: 400px;
+        margin: auto;
+        display: block;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1023px) {
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+
+      div {
+        width: 50%;
+      }
+
+      p {
+        width: 50%;
+        text-align: left;
+      }
+    }
   }
 `;
 
