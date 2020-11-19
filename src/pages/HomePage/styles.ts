@@ -162,7 +162,7 @@ export const SectionInitial = styled.section`
     .wrapper {
       .image {
         img {
-          width: 600px;
+          width: 680px;
         }
       }
     }
