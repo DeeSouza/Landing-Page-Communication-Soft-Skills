@@ -2,6 +2,8 @@ import ImageSlide1 from '../../assets/images/covers/media-1.jpg';
 import ImageSlide2 from '../../assets/images/covers/media-2.jpg';
 import ImageSlide3 from '../../assets/images/covers/media-3.jpg';
 import ImageSlide4 from '../../assets/images/covers/media-4.jpg';
+import ImageSlide5 from '../../assets/images/covers/media-5.jpg';
+import ImageSlide6 from '../../assets/images/covers/media-6.jpg';
 
 export default [
   {
@@ -47,7 +49,7 @@ export default [
     title: 'Communication Skills for Workplace Success',
     link: 'https://www.thebalancecareers.com/communication-skills-list-2063779',
     description: '',
-    image: ImageSlide4,
+    image: ImageSlide5,
   },
   {
     key: 'slide-6',
@@ -56,7 +58,7 @@ export default [
     title: 'Comunicação É A “Soft Skill” Do Momento',
     link: 'https://insperiencia.com.br/blog/comunicacao-soft-skill/',
     description: '',
-    image: ImageSlide4,
+    image: ImageSlide5,
   },
   {
     key: 'slide-7',
@@ -66,7 +68,7 @@ export default [
     link:
       'https://forbes.com.br/carreira/2017/07/6-soft-skills-mais-requisitadas-pelo-mercado/',
     description: '',
-    image: ImageSlide4,
+    image: ImageSlide5,
   },
   {
     key: 'slide-8',
@@ -76,7 +78,7 @@ export default [
     link:
       'https://ler.amazon.com.br/kp/embed?asin=B0762FSK5G&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_qAPTFbF2542BA',
     description: '',
-    image: ImageSlide4,
+    image: ImageSlide6,
   },
   {
     key: 'slide-9',
@@ -87,7 +89,7 @@ export default [
     link:
       'https://ler.amazon.com.br/kp/embed?asin=B00K863BAM&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_nAPTFbBZ6BG1H',
     description: '',
-    image: ImageSlide4,
+    image: ImageSlide6,
   },
   {
     key: 'slide-10',
@@ -97,6 +99,6 @@ export default [
     link:
       'https://ler.amazon.com.br/kp/embed?asin=B00A3CQXCO&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_JBPTFb1F68338',
     description: '',
-    image: ImageSlide4,
+    image: ImageSlide6,
   },
 ];

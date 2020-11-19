@@ -14,6 +14,8 @@ const settings = {
   dots: false,
   infinite: true,
   speed: 500,
+  autoplay: true,
+  autoplaySpeed: 4000,
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: false,
@@ -46,13 +48,14 @@ const MediaCarousel: React.FC = () => {
         {contents.map((content) => (
           <ItemSlider key={content.key}>
             <a href={content.link} target="_blank" rel="noreferrer">
+              <div className="wrapper-item">
+                <img src={content.image} alt={content.title} />
+              </div>
+
               <div className="overlay">
                 {content.type === 'video' && <MdPlayCircleOutline />}
                 {content.type === 'article' && <MdChromeReaderMode />}
                 {content.type === 'book' && <MdBook />}
-              </div>
-              <div className="wrapper-item">
-                <img src={content.image} alt={content.title} />
               </div>
             </a>
           </ItemSlider>

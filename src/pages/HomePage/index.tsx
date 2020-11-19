@@ -93,7 +93,7 @@ const HomePage: React.FC = () => {
       </SectionCommunication>
 
       <SectionHowWork>
-        <TitleSection>Como Funciona</TitleSection>
+        <TitleSection>Sobre</TitleSection>
 
         <Flow />
       </SectionHowWork>

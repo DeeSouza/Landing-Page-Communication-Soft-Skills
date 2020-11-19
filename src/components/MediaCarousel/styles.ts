@@ -20,6 +20,7 @@ export const ItemSlider = styled.div`
     display: block;
     position: relative;
     border-radius: 15px;
+    overflow: hidden;
 
     .overlay {
       background-image: linear-gradient(
@@ -48,9 +49,19 @@ export const ItemSlider = styled.div`
     .wrapper-item {
       background-color: #fff;
       border-radius: 15px;
+      overflow: hidden;
+
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
 
       img {
+        transition: all 0.25s ease-out;
+        height: 100%;
         width: 100%;
+        transform: scale(1);
         border-radius: 15px;
       }
     }
