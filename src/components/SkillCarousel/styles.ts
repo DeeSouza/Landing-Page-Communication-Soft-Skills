@@ -2,14 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin: 20px auto;
+  max-width: 1280px;
 `;
 
 export const ItemSlider = styled.div`
   width: 100%;
-  height: 300px;
 
   .wrapper-item {
     max-width: 320px;
+    height: 300px;
     margin: 0 auto;
     padding: 0px 25px;
 
@@ -25,7 +26,7 @@ export const ItemSlider = styled.div`
     }
 
     div {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 300;
       margin-top: 10px;
       text-align: justify;

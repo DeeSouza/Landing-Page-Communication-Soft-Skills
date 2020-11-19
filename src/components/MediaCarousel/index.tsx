@@ -1,4 +1,9 @@
 import React from 'react';
+import {
+  MdPlayCircleOutline,
+  MdChromeReaderMode,
+  MdBook,
+} from 'react-icons/md';
 import Slider, { Settings } from 'react-slick';
 
 import contents from './contents';
@@ -34,17 +39,22 @@ const settings = {
   ],
 } as Settings;
 
-const SkillCarousel: React.FC = () => {
+const MediaCarousel: React.FC = () => {
   return (
     <Container>
       <Slider {...settings}>
         {contents.map((content) => (
           <ItemSlider key={content.key}>
-            <div className="wrapper-item">
-              <img src={content.image} alt={content.title} />
-              <p>{content.title}</p>
-              <div>{content.description}</div>
-            </div>
+            <a href={content.link} target="_blank" rel="noreferrer">
+              <div className="overlay">
+                {content.type === 'video' && <MdPlayCircleOutline />}
+                {content.type === 'article' && <MdChromeReaderMode />}
+                {content.type === 'book' && <MdBook />}
+              </div>
+              <div className="wrapper-item">
+                <img src={content.image} alt={content.title} />
+              </div>
+            </a>
           </ItemSlider>
         ))}
       </Slider>
@@ -52,4 +62,4 @@ const SkillCarousel: React.FC = () => {
   );
 };
 
-export default SkillCarousel;
+export default MediaCarousel;

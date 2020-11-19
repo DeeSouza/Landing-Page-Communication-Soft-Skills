@@ -2,44 +2,49 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   padding: 0px 25px;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   background: #6555df;
 
-  h2 {
-    font-weight: 600;
-    font-size: 25px;
-    color: #fff;
-  }
+  .wrapper {
+    max-width: 1280px;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-  button {
-    width: 40px;
-    height: 40px;
+    h2 {
+      font-weight: 600;
+      font-size: 25px;
+      color: #fff;
+    }
 
-    div {
-      text-align: right;
-      position: relative;
-      align-items: flex-end;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    button {
+      width: 40px;
+      height: 40px;
 
-      &:before {
-        content: '';
-        width: 60%;
-        height: 2px;
-        background-color: #ffb4e0;
-        margin-bottom: 5px;
-      }
+      div {
+        text-align: right;
+        position: relative;
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-      &:after {
-        content: '';
-        width: 90%;
-        height: 2px;
-        background-color: #ffb4e0;
+        &:before {
+          content: '';
+          width: 60%;
+          height: 2px;
+          background-color: #ffb4e0;
+          margin-bottom: 5px;
+        }
+
+        &:after {
+          content: '';
+          width: 90%;
+          height: 2px;
+          background-color: #ffb4e0;
+        }
       }
     }
   }
