@@ -3,12 +3,13 @@ import {
   MdPlayCircleOutline,
   MdChromeReaderMode,
   MdBook,
+  MdKeyboardArrowRight,
+  MdKeyboardArrowLeft
 } from 'react-icons/md';
 import Slider, { Settings } from 'react-slick';
 
 import contents from './contents';
-
-import { Container, ItemSlider } from './styles';
+import { Container, ItemSlider, NextArrow, PrevArrow } from './styles';
 
 const settings = {
   dots: false,
@@ -18,7 +19,9 @@ const settings = {
   autoplaySpeed: 4000,
   slidesToShow: 4,
   slidesToScroll: 1,
-  arrows: false,
+  swipe: false,
+  nextArrow: <NextArrow><MdKeyboardArrowRight /></NextArrow>,
+  prevArrow: <PrevArrow><MdKeyboardArrowLeft /></PrevArrow>,
   responsive: [
     {
       breakpoint: 567,

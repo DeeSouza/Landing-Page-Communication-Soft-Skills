@@ -6,7 +6,7 @@ import { Container } from './styles';
 
 const Footer: React.FC = () => {
   return (
-    <Container>
+    <Container id="start">
       <TitleSection>Comece agora</TitleSection>
 
       <div className="wrapper">

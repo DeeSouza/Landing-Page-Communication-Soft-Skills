@@ -16,6 +16,6 @@ Cada vez mais que praticamos as habilidades acima, mais nos tornamos bons comuni
 
 **Talk UP** é uma empresa mental fictícia. O objetivo dela é te incentivar a ir atrás desta SOFT SKILL tão importante, não apenas para sua vida pessoal, mas como também sua vida profissional.
 
-**Talk** é conversar em inglês e **UP** dá a ideia de sempre melhorar ou se atualizar nesse aspecto.
+**Talk Up** é conversar em inglês e dá a ideia de sempre melhorar ou se atualizar nesse aspecto.
 
 Então, Talk Up!

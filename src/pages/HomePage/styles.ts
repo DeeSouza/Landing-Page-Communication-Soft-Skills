@@ -9,15 +9,12 @@ export const Container = styled.div`
   section {
     width: 100%;
 
-    & + section {
-      margin: 40px auto;
-    }
-
     h2 {
       text-align: center;
       font-size: 26px;
       font-family: 'Comfortaa';
       font-weight: 600;
+      padding: 40px 25px 0;
 
       strong {
         display: block;

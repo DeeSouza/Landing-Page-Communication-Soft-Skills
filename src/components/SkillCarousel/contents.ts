@@ -77,7 +77,7 @@ export default [
     key: 'slide-10',
     title: 'Meio correto de comunicação',
     description:
-      'Por exemplo, algumas conversas sérias (demissões, demissão, mudanças no salário, etc.) quase sempre são mais bem feitas pessoalmente.',
+      'Por exemplo, algumas conversas sérias (demissões, mudanças no salário, etc.) quase sempre são mais bem feitas pessoalmente.',
     image: ImageSlide10,
   },
 ];

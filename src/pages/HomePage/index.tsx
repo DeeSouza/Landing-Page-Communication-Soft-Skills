@@ -26,7 +26,7 @@ import MediaCarousel from '../../components/MediaCarousel';
 const HomePage: React.FC = () => {
   return (
     <Container>
-      <SectionInitial>
+      <SectionInitial id="initial">
         <Shape />
 
         <div className="wrapper">
@@ -53,7 +53,7 @@ const HomePage: React.FC = () => {
         </div>
       </SectionInitial>
 
-      <SectionAbout>
+      <SectionAbout id="talkup">
         <TitleSection>
           Talk UP<strong>Gerenciador de Habilidades de Comunicação</strong>
         </TitleSection>
@@ -72,33 +72,36 @@ const HomePage: React.FC = () => {
         </div>
       </SectionAbout>
 
-      <SectionSkills>
-        <TitleSection>Habilidades</TitleSection>
+      <SectionSkills id="skills">
+        <TitleSection>Habilidades de Comunicação no Local de Trabalho</TitleSection>
 
         <SkillCarousel />
       </SectionSkills>
 
-      <SectionCommunication>
-        <TitleSection>Comunicação Avançada</TitleSection>
+      <SectionCommunication id="objective">
+        <TitleSection>Objetivo</TitleSection>
 
         <p className="description">
           Através do <strong>Talk UP</strong> você poderá melhorar suas
           habilidades de comunicação por gerenciar os traços de personalidade e
-          comportamento da sua vida.
+          comportamento da sua vida. Talk UP é uma empresa mental fictícia. 
+          O objetivo dela é te incentivar a ir atrás desta Soft Skill tão 
+          importante, não apenas para sua vida pessoal, mas como também sua 
+          vida profissional.
         </p>
 
         <div className="wrapper">
-          <p>Comunicação não é só saber conversar</p>
+          <p>Comunicação não é só conversar</p>
         </div>
       </SectionCommunication>
 
-      <SectionHowWork>
-        <TitleSection>Sobre</TitleSection>
+      <SectionHowWork id="howwork">
+        <TitleSection>Como Funciona</TitleSection>
 
         <Flow />
       </SectionHowWork>
 
-      <SectionCarrer>
+      <SectionCarrer id="carrer">
         <TitleSection>Carreira e Relacionamento</TitleSection>
 
         <div className="wrapper">
@@ -126,7 +129,7 @@ const HomePage: React.FC = () => {
         </div>
       </SectionCarrer>
 
-      <SectionMedia>
+      <SectionMedia id="media">
         <TitleSection>Artigos e Vídeos</TitleSection>
 
         <MediaCarousel />

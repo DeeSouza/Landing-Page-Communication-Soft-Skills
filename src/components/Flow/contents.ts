@@ -40,7 +40,7 @@ export default [
   },
   {
     key: 'step-7',
-    description: 'A melhoria é contínua. Não desiste e volte no primeiro passo',
+    description: 'A melhoria é contínua. Não desista e volte no primeiro passo',
     image: ImageStep7,
   },
   {
