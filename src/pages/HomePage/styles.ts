@@ -14,14 +14,14 @@ export const Container = styled.div`
       font-size: 26px;
       font-family: 'Comfortaa';
       font-weight: 600;
-      padding: 40px 25px 0;
+      padding: 40px 15px 0;
 
       strong {
         display: block;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
         margin-top: 5px;
-        padding: 0px 10px;
+        padding: 0px 5px;
       }
     }
 

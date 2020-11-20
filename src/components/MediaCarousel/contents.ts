@@ -84,8 +84,7 @@ export default [
     key: 'slide-9',
     type: 'book',
     channel: 'amazon',
-    title:
-      'Comunicação não-violenta: técnicas para aprimorar relacionamentos pessoais e profissionais',
+    title: 'Técnicas de Comunicação não-violenta',
     link:
       'https://ler.amazon.com.br/kp/embed?asin=B00K863BAM&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_nAPTFbBZ6BG1H',
     description: '',

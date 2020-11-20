@@ -15,41 +15,51 @@ export const ItemSlider = styled.div`
   a {
     max-width: 277px;
     flex: 1;
-    height: 156px;
     margin: 0 auto;
     display: block;
     position: relative;
-    border-radius: 15px;
     overflow: hidden;
 
-    .overlay {
-      background-image: linear-gradient(
-        to bottom,
-        rgba(245, 246, 252, 0.52),
-        rgb(93 93 93 / 50%)
-      );
-      border-radius: 15px;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      left: 0;
-      top: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      svg {
-        fill: #fff;
-        width: 70px;
-        height: 70px;
-        opacity: 0.8;
-      }
+    strong {
+      font-size: 15px;
+      color: #000;
+      font-weight: 300;
+      padding: 20px;
+      display: block;
+      text-align: center;
+      font-family: 'Comfortaa';
     }
 
     .wrapper-item {
       background-color: #fff;
-      border-radius: 15px;
       overflow: hidden;
+      position: relative;
+      max-height: 156px;
+      border-radius: 15px;
+
+      .overlay {
+        background-image: linear-gradient(
+          to bottom,
+          rgba(245, 246, 252, 0.52),
+          rgb(93 93 93 / 50%)
+        );
+        border-radius: 15px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          fill: #fff;
+          width: 70px;
+          height: 70px;
+          opacity: 0.8;
+        }
+      }
 
       &:hover {
         img {
