@@ -4,7 +4,7 @@ import {
   MdChromeReaderMode,
   MdBook,
   MdKeyboardArrowRight,
-  MdKeyboardArrowLeft
+  MdKeyboardArrowLeft,
 } from 'react-icons/md';
 import Slider, { Settings } from 'react-slick';
 
@@ -20,8 +20,16 @@ const settings = {
   slidesToShow: 4,
   slidesToScroll: 1,
   swipe: false,
-  nextArrow: <NextArrow><MdKeyboardArrowRight /></NextArrow>,
-  prevArrow: <PrevArrow><MdKeyboardArrowLeft /></PrevArrow>,
+  nextArrow: (
+    <NextArrow>
+      <MdKeyboardArrowRight />
+    </NextArrow>
+  ),
+  prevArrow: (
+    <PrevArrow>
+      <MdKeyboardArrowLeft />
+    </PrevArrow>
+  ),
   responsive: [
     {
       breakpoint: 567,

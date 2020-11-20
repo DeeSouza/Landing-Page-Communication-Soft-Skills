@@ -73,11 +73,12 @@ export const NextArrow = styled.div`
   z-index: 1;
   width: 40px;
   height: 40px;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
+  transition: all 0.25s ease-out;
 
   svg {
-    fill: #FFF;
+    fill: #fff;
     width: 40px;
     height: 40px;
   }
@@ -86,13 +87,12 @@ export const NextArrow = styled.div`
     display: none;
   }
 
-  @media screen and (min-width: 1024px){
-    right: 0;
-    transition: all 0.25s ease-out;
+  &:hover {
+    background-color: #6555df;
+  }
 
-    &:hover {
-      background-color: #6555df;
-    }
+  @media screen and (min-width: 1024px) {
+    right: 0;
   }
 `;
 
@@ -101,11 +101,12 @@ export const PrevArrow = styled.div`
   z-index: 1;
   width: 40px;
   height: 40px;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
+  transition: all 0.25s ease-out;
 
   svg {
-    fill: #FFF;
+    fill: #fff;
     width: 40px;
     height: 40px;
   }
@@ -114,12 +115,11 @@ export const PrevArrow = styled.div`
     display: none;
   }
 
-  @media screen and (min-width: 1023px){
-    left: 0;
-    transition: all 0.25s ease-out;
+  &:hover {
+    background-color: #6555df;
+  }
 
-    &:hover {
-      background-color: #6555df;
-    }
+  @media screen and (min-width: 1023px) {
+    left: 0;
   }
 `;

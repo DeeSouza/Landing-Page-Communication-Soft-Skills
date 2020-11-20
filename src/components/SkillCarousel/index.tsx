@@ -1,9 +1,6 @@
 import React from 'react';
 import Slider, { Settings } from 'react-slick';
-import {
-  MdKeyboardArrowRight,
-  MdKeyboardArrowLeft
-} from 'react-icons/md';
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 
 import contents from './contents';
 import { Container, ItemSlider, NextArrow, PrevArrow } from './styles';
@@ -17,8 +14,16 @@ const settings = {
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: true,
-  nextArrow: <NextArrow><MdKeyboardArrowRight /></NextArrow>,
-  prevArrow: <PrevArrow><MdKeyboardArrowLeft /></PrevArrow>,
+  nextArrow: (
+    <NextArrow>
+      <MdKeyboardArrowRight />
+    </NextArrow>
+  ),
+  prevArrow: (
+    <PrevArrow>
+      <MdKeyboardArrowLeft />
+    </PrevArrow>
+  ),
   responsive: [
     {
       breakpoint: 567,

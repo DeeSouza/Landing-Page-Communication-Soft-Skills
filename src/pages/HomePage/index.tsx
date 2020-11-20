@@ -73,7 +73,9 @@ const HomePage: React.FC = () => {
       </SectionAbout>
 
       <SectionSkills id="skills">
-        <TitleSection>Habilidades de Comunicação no Local de Trabalho</TitleSection>
+        <TitleSection>
+          Habilidades de Comunicação no Local de Trabalho
+        </TitleSection>
 
         <SkillCarousel />
       </SectionSkills>
@@ -84,10 +86,10 @@ const HomePage: React.FC = () => {
         <p className="description">
           Através do <strong>Talk UP</strong> você poderá melhorar suas
           habilidades de comunicação por gerenciar os traços de personalidade e
-          comportamento da sua vida. Talk UP é uma empresa mental fictícia. 
-          O objetivo dela é te incentivar a ir atrás desta Soft Skill tão 
-          importante, não apenas para sua vida pessoal, mas como também sua 
-          vida profissional.
+          comportamento da sua vida. Talk UP é uma empresa mental fictícia. O
+          objetivo dela é te incentivar a ir atrás desta Soft Skill tão
+          importante, não apenas para sua vida pessoal, mas como também sua vida
+          profissional.
         </p>
 
         <div className="wrapper">

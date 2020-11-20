@@ -8,6 +8,12 @@ export default createGlobalStyle`
     outline: 0;
   }
 
+  html {
+    &.hidden-scroll {
+      overflow: hidden;
+    }
+  }
+
   body {
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};

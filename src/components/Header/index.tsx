@@ -7,7 +7,15 @@ const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const showMenu = useCallback(() => {
-    setIsOpen(state => !state);
+    setIsOpen((state) => !state);
+  }, []);
+
+  useEffect(() => {
+    isOpen
+      ? document.getElementsByTagName('html')[0].classList.add('hidden-scroll')
+      : document
+          .getElementsByTagName('html')[0]
+          .classList.remove('hidden-scroll');
   }, [isOpen]);
 
   return (
