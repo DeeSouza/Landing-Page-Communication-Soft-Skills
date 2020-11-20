@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   padding: 0px 25px;
-  background: #6555df;
+  background: ${({ theme }) => theme.colors.primary};
 
   .wrapper {
     max-width: 1280px;
@@ -35,7 +35,7 @@ export const Container = styled.header`
           content: '';
           width: 60%;
           height: 2px;
-          background-color: #ffb4e0;
+          background-color: ${({ theme }) => theme.colors.secondary};
           margin-bottom: 5px;
         }
 
@@ -43,7 +43,7 @@ export const Container = styled.header`
           content: '';
           width: 90%;
           height: 2px;
-          background-color: #ffb4e0;
+          background-color: ${({ theme }) => theme.colors.secondary};
         }
       }
     }

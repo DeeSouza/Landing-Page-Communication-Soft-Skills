@@ -11,7 +11,7 @@ export const Container = styled.div<IProps>`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #6555df;
+  background-color: ${({ theme }) => theme.colors.primary};
   z-index: 3;
   overflow: hidden;
   flex-direction: column;
@@ -29,7 +29,7 @@ export const Container = styled.div<IProps>`
     &:hover {
       svg {
         transform: scale(1.05);
-        fill: #ffb4e0;
+        fill: ${({ theme }) => theme.colors.secondary};
       }
     }
 
@@ -53,7 +53,7 @@ export const Container = styled.div<IProps>`
 
     &:hover {
       transform: scale(1.05);
-      color: #ffb4e0;
+      color: ${({ theme }) => theme.colors.secondary};
     }
   }
 `;

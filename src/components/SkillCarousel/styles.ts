@@ -54,7 +54,7 @@ export const NextArrow = styled.div`
   }
 
   &:hover {
-    background-color: #6555df;
+    background-color: ${({ theme }) => theme.colors.primary};
   }
 
   @media screen and (min-width: 1024px) {
@@ -82,7 +82,7 @@ export const PrevArrow = styled.div`
   }
 
   &:hover {
-    background-color: #6555df;
+    background-color: ${({ theme }) => theme.colors.primary};
   }
 
   @media screen and (min-width: 1023px) {

@@ -68,7 +68,7 @@ export const Container = styled.div`
 `;
 
 export const SectionInitial = styled.section`
-  background: #6555df;
+  background: ${({ theme }) => theme.colors.primary};
   background-size: 400px;
   height: calc(100% - 230px);
   max-height: 360px;
@@ -90,7 +90,7 @@ export const SectionInitial = styled.section`
         line-height: 1.2;
 
         span {
-          color: #ffb4e0;
+          color: ${({ theme }) => theme.colors.secondary};
         }
       }
 
@@ -104,7 +104,7 @@ export const SectionInitial = styled.section`
         max-width: 280px;
 
         strong {
-          color: #ffb4e0;
+          color: ${({ theme }) => theme.colors.secondary};
         }
       }
     }
@@ -212,7 +212,7 @@ export const SectionSkills = styled.section`
 
 export const SectionCommunication = styled.section`
   padding: 0;
-  background-color: #6555df;
+  background-color: ${({ theme }) => theme.colors.primary};
   overflow: hidden;
 
   h2 {

@@ -80,6 +80,7 @@ export const ItemSlider = styled.div`
 
 export const NextArrow = styled.div`
   right: 10px;
+  top: 78px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -98,7 +99,7 @@ export const NextArrow = styled.div`
   }
 
   &:hover {
-    background-color: #6555df;
+    background-color: ${({ theme }) => theme.colors.primary};
   }
 
   @media screen and (min-width: 1024px) {
@@ -108,6 +109,7 @@ export const NextArrow = styled.div`
 
 export const PrevArrow = styled.div`
   left: 10px;
+  top: 78px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -126,7 +128,7 @@ export const PrevArrow = styled.div`
   }
 
   &:hover {
-    background-color: #6555df;
+    background-color: ${({ theme }) => theme.colors.primary};
   }
 
   @media screen and (min-width: 1023px) {

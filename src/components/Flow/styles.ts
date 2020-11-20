@@ -77,7 +77,7 @@ export const Container = styled.div`
       p {
         max-width: 50%;
         padding: 0px 15px 0px 0px;
-        color: #6555df;
+        color: ${({ theme }) => theme.colors.primary};
         font-size: 15px;
         font-weight: 300;
       }
