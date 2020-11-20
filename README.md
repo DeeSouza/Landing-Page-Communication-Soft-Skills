@@ -2,6 +2,8 @@
 
 > Por que a comunicação é a mais importante SOFT SKILL para você desenvolver?
 
+[Talk UP Live](https://landing-page-communication-soft-skills.vercel.app/)
+
 A comunicação é o ato de participar. Mas não queremos apenas estar presente ou ficar de ouvinte, queremos que nossa participação seja efetiva, faça a diferença ou que pelo menos notem que estamos ali para agregar algum valor.
 
 Mas se não tivermos as habilidades de comunicação necessárias dificilmente vamos alcançar esse objetivo. E uma boa comunicação envolve muitos fatores, mas que embora sejam muitos, podemos naturalmente desenvolver porquê temos todas as condições humanas de fazer isso. Como por exemplo:
