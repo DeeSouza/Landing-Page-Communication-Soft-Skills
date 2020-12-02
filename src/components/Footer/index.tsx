@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
         </p>
 
         <ul>
-          <li>Inteliência emocional</li>
+          <li>Inteligência emocional</li>
           <li>Resiliência</li>
           <li>Empatia</li>
           <li>Lidar com a pressão</li>
